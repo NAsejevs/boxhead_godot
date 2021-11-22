@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.2, 0.2, 0.2 )
+
+[node name="Player" type="KinematicBody"]
+axis_lock_motion_y = true
+move_lock_y = true
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 1 )
+
+[node name="CSGCylinder" type="CSGCylinder" parent="."]
+radius = 0.5
+sides = 16
